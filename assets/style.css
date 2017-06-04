@@ -1,0 +1,66 @@
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    vertical-align: middle;
+    font-size: 18px;
+    font-family: 'Abel', sans-serif;
+    background-color: #1a1a1a;
+    width: 1050px;
+
+}
+
+button {
+  margin: 5px;
+  font-size: 18px;
+    font-family: 'Abel', sans-serif;
+    font-weight: bolder;
+    border-radius: 10px;
+
+}
+
+div, form, label {
+  margin: 15px;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Anton', sans-serif;
+  text-transform: uppercase;
+  font-size: 60px;
+  margin-bottom: 10px;
+  color: #ff0000;
+  letter-spacing: .06em;
+}
+
+label {
+  color: #ffffff;
+}
+
+input#add-show {
+  font-size: 18px;
+  font-family: 'Abel', sans-serif;
+  margin-left: 5px;
+}
+
+.tv-gifs {
+  display: inline-block;
+}
+
+.gif {
+  border-radius: 10px;
+  border-width: 15px;
+  border-style: solid;
+  border-color: #000000;
+}
+
+p {
+  color: #e6e6e6;
+  text-align: center;
+}
