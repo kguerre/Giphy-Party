@@ -11,7 +11,7 @@ var topics = [
 "Grey's Anatomy"];
 
 //FUNCTIONS
-  $(document).ready(function() {
+$(document).ready(function() {
  
 //renderButtons()   
   function renderButtons() {
