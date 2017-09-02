@@ -1,5 +1,5 @@
 # Giphy-Party
-Homework 6
+
 # GifTastic
 
 ### Overview
