@@ -21,3 +21,5 @@ For this assignment, I used the GIPHY API to make a dynamic web page that popula
 6. Other users can type in their favorite tv show, which gets added to the array of strings, and dynamically create a button to generate 10 gifs of that tv show.
 
 7. Cool, huh?
+
+[Check it out!](https://kguerre.github.io/Giphy-Party/)
