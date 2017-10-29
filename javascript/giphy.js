@@ -10,16 +10,10 @@ var topics = [
 "Spongebob",
 "Grey's Anatomy"];
 
-//FUNCTIONS
-$(document).ready(function() {
- 
-//renderButtons()   
+$(document).ready(function() {   
   function renderButtons() {
-
     $("#tv-button").empty();
-
     for (var i = 0; i < topics.length; i++) {
-
         var t = $("<button>");
         t.addClass("tv");
         t.attr("data-show", topics[i]);
@@ -29,7 +23,6 @@ $(document).ready(function() {
   }
 
   $("#add-show").on("click", function(event) {
-   
     event.preventDefault();
       var show = $("#tv-input").val().trim();
       topics.push(show);
@@ -41,15 +34,13 @@ $(document).ready(function() {
 
 renderButtons();
 
-//AJAX Request
-
 $(document).on("click", ".tv", function() {
 
   $("#tv-shows").empty();
 
-var tvShow = $(this).attr("data-show");
-console.log(this)
-var queryURL = 'https://api.giphy.com/v1/gifs/search?q=' + tvShow + '&limit=10&rating=pg&api_key=dc6zaTOxFJmzC'; 
+  var tvShow = $(this).attr("data-show");
+  console.log(this)
+  var queryURL = 'https://api.giphy.com/v1/gifs/search?q=' + tvShow + '&limit=10&rating=pg&api_key=dc6zaTOxFJmzC'; 
 
   $.ajax({
       url: queryURL,
@@ -83,7 +74,6 @@ var queryURL = 'https://api.giphy.com/v1/gifs/search?q=' + tvShow + '&limit=10&r
 
 });
 
-
 $(document).on("click", ".gif", function () {
   var state = $(this).attr("data-state")
       if (state === "still") {
@@ -94,7 +84,4 @@ $(document).on("click", ".gif", function () {
         $(this).attr("data-state", "still");
       }
     });
-    
-    
-
 });
